@@ -19,8 +19,10 @@ def track_customer_payment(name, melon, actual_payment, cost = MELON_COST):
     expected_payment = melon * cost
     # Check if his actual payment is not the same as his expected payment
     if expected_payment != actual_payment:
+        formatted_expected_payment = "{:.2f}".format(expected_payment)
+        formatted_actual_payment = "{:.2f}".format(actual_payment)
         # print out a statement with customer name, his actual and his expected payment
-        print(f"{name} paid ${actual_payment}, expected ${expected_payment}")
+        print(f"{name} paid ${formatted_actual_payment}, expected ${formatted_expected_payment}")
         
 
 #1 Create a function to read text file and save customer's data
