@@ -1,7 +1,7 @@
 # Constant variable to hold the cost of a melon
 MELON_COST = 1.00
 
-#2 Create function to track customers' payments
+# Create function to track customers' payments
 # Function definition and its parameters
 def track_customer_payment(name, melon, actual_payment, cost = MELON_COST):
     ''' Evaluate and print out which customers are overpaid or underpaid
@@ -13,6 +13,7 @@ def track_customer_payment(name, melon, actual_payment, cost = MELON_COST):
     - the cost of one melon (constant)
     Output:
     - print out customer name, what he paid and what he is supposed to pay
+    - print out if a customer is underpaid or overpaid
 
     '''
 
@@ -34,9 +35,7 @@ def track_customer_payment(name, melon, actual_payment, cost = MELON_COST):
     print(f"{first_name} has {status} for their melons")
 
 
-        
-
-#1 Create a function to read text file and save customer's data
+# Create a function to read text file and save customer's data
 # Function definition and its parameter
 def get_customer_data(path):
     ''' Process the input file and generate customer data report'''
