@@ -10,10 +10,10 @@ def get_customer_data(path):
         print(customer_data)
 
         customer_name = customer_data[1]
-        customer_melon = customer_data[2]
-        customer_paid = customer_data[3]
+        customer_melon = int(customer_data[2])
+        customer_paid = float(customer_data[3])
 
-get_customer_data("customer-orders.txt")
+        
 
 
 # melon_cost = 1.00
