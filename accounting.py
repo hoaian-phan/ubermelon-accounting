@@ -15,6 +15,10 @@ def track_customer_payment(name, melon, actual_payment, cost = MELON_COST):
     - print out customer name, what he paid and what he is supposed to pay
 
     '''
+
+    # Get customer's first name
+    full_name = name.split(' ')
+    first_name, last_name = full_name
     # What customer is supposed to pay
     expected_payment = melon * cost
     
@@ -27,7 +31,7 @@ def track_customer_payment(name, melon, actual_payment, cost = MELON_COST):
     else:
         status = 'overpaid'
     
-    print(f"{name} has {status} for their melons")
+    print(f"{first_name} has {status} for their melons")
 
 
         
